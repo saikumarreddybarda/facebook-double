@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Facebook Corporation Mockup</title>
+    <style>
+        body { 
+            font-family: Arial, sans-serif; 
+            background: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+            color: white; 
+            margin: 0; 
+            padding: 0; 
+        }
+        .header { 
+            background: #3b5998; 
+            padding: 10px 20px; 
+            display: flex; 
+            justify-content: space-between; 
+            align-items: center; 
+        }
+        .search-bar input { 
+            padding: 10px; 
+            width: 300px; 
+            border-radius: 20px; 
+            border: 1px solid #ddd; 
+        }
+        .content { 
+            display: flex; 
+            padding: 20px; 
+        }
+        .newsfeed { 
+            flex: 2; 
+            margin-right: 20px; 
+        }
+        .newsfeed h2, .messaging h2 { 
+            margin-top: 0; 
+        }
+        .messaging { 
+            flex: 1; 
+            background: rgba(255, 255, 255, 0.2); 
+            padding: 20px; 
+            border-radius: 10px; 
+        }
+        .message-form input, .message-form textarea { 
+            width: 100%; 
+            margin-bottom: 10px; 
+            padding: 10px; 
+            border-radius: 10px; 
+            border: none; 
+        }
+        .footer { 
+            background: #3b5998; 
+            color: white; 
+            text-align: center; 
+            padding: 10px; 
+            position: fixed; 
+            bottom: 0; 
+            width: 100%; 
+        }
+    </style>
+    <script>
+        function searchPeople() {
+            alert("Search feature not implemented in this mockup.");
+        }
+    </script>
+</head>
+<body>
+    <div class="header">
+        <div>Facebook Mockup</div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search people..." onkeypress="if(event.keyCode == 13) searchPeople()">
+        </div>
+    </div>
+    <div class="content">
+        <div class="newsfeed">
+            <h2>Newsfeed</h2>
+            <!-- Mockup posts -->
+            <p>Here would be the newsfeed with posts from people you follow...</p>
+        </div>
+        <div class="messaging">
+            <h2>Messaging</h2>
+            <div class="message-form">
+                <input type="text" placeholder="Recipient" />
+                <textarea placeholder="Write your message..."></textarea>
+                <button onclick="alert('Send message feature not implemented in this mockup.')">Send Message</button>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>&copy; 2023 Facebook Corporation Mockup</p>
+    </div>
+</body>
+</html>
